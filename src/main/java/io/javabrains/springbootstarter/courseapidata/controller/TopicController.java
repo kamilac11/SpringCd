@@ -1,9 +1,9 @@
-package controller;
+package io.javabrains.springbootstarter.courseapidata.controller;
 
-import model.Topic;
+import io.javabrains.springbootstarter.courseapidata.model.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.TopicService;
+import io.javabrains.springbootstarter.courseapidata.service.TopicService;
 
 import java.util.List;
 import java.util.Optional;

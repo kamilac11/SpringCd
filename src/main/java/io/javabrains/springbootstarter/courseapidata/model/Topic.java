@@ -1,4 +1,4 @@
-package model;
+package io.javabrains.springbootstarter.courseapidata.model;
 
 
 

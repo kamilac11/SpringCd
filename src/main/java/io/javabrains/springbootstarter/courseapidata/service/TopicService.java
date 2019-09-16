@@ -1,9 +1,9 @@
-package service;
+package io.javabrains.springbootstarter.courseapidata.service;
 
-import model.Topic;
+import io.javabrains.springbootstarter.courseapidata.model.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.TopicRepository;
+import io.javabrains.springbootstarter.courseapidata.repository.TopicRepository;
 
 import java.util.ArrayList;
 import java.util.List;
