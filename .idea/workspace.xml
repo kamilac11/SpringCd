@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="88489709-9d97-4a6f-9f5d-129492ccdc5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootstarter/courseapidata/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootstarter/courseapidata/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootstarter/courseapidata/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootstarter/courseapidata/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootstarter/courseapidata/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootstarter/courseapidata/repository/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootstarter/courseapidata/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootstarter/courseapidata/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootstarter/courseapidata/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/springbootstarter/courseapidata/service/TopicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/javabrains/springbootstarter/courseapidata/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/javabrains/springbootstarter/courseapidata/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/javabrains/springbootstarter/courseapidata/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/javabrains/springbootstarter/courseapidata/repository/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/javabrains/springbootstarter/courseapidata/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/javabrains/springbootstarter/courseapidata/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/javabrains/springbootstarter/courseapidata/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/javabrains/springbootstarter/courseapidata/service/TopicService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,18 +58,13 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="CourseApiDataApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CourseApiDataApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.javabrains.springbootstarter.courseapidata.CourseApiDataApplication" />
-      <module name="course-api-data" />
+      <module name="kursIndieIntllij" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.CourseApiDataApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />

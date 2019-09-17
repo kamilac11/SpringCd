@@ -12,20 +12,24 @@ public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String id;
+    private int id;
     private String title;
     private String author;
     private int year;
 
-    public Book(String id, String title, String author, int year){
-        this.id = id;
-        this.setTitle(title);
-        this.setAuthor(author);
-        this.setYear(year);
+    public Book() {
 
     }
 
-    public String getId() {
+    public Book(int id, String title, String author, int year){
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.year = year;
+
+    }
+
+    public int getId() {
         return id;
     }
 

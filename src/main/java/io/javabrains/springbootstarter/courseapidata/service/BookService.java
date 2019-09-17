@@ -20,7 +20,7 @@ public class BookService {
         return books;
     }
 
-    public Optional<io.javabrains.springbootstarter.courseapidata.model.Book> getBook(String id) {
+    public Optional<io.javabrains.springbootstarter.courseapidata.model.Book> getBook(int id) {
         return bookRepository.findById(id);
     }
 
@@ -29,10 +29,13 @@ public class BookService {
         bookRepository.save(book);
     }
 
-    public void updateBook(String id, Book book){
-        bookRepository.save(book);
+    public void updateBook(int id, Book book){
+       bookRepository.findById(id).ifPresent(bookExist -> {
+           bookRepository.save(book);
+       });
     }
-    public void deleteBook(String id){
+
+    public void deleteBook(int id){
         bookRepository.deleteById(id);
     }
 

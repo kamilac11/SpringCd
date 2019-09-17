@@ -20,7 +20,7 @@ public class BookController {
     }
 
     @RequestMapping("/books/{id}")
-    public Optional<Book> getBook(@PathVariable String id) {
+    public Optional<Book> getBook(@PathVariable int id) {
         return bookService.getBook(id);
     }
 
@@ -30,12 +30,18 @@ public class BookController {
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "/books/{id}")
-    public void updateBook(@RequestBody Book book, @PathVariable String id){
+    public void updateBook(@RequestBody Book book, @PathVariable int id){
             bookService.updateBook(id, book);
         }
 
+    //to nie dziala wgl
+//    @RequestMapping(method = RequestMethod.PUT, value = "/books")
+//    public void updateBook(@RequestBody Book book){
+//        bookService.updateBook(book);
+//    }
+
     @RequestMapping(method = RequestMethod.DELETE, value = "/books/{id}")
-    public void deleteBook(@PathVariable String id){
+    public void deleteBook(@PathVariable int id){
         bookService.deleteBook(id);
     }
 
