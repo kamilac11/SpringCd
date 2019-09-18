@@ -11,7 +11,7 @@ public class Book {
     //spring -boot starter test depenedcy
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String title;
     private String author;
