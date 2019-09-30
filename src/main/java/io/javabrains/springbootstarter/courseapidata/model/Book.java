@@ -16,17 +16,27 @@ public class Book {
     private String title;
     private String author;
     private int year;
+    private String bookCover;
 
     public Book() {
 
     }
 
-    public Book(int id, String title, String author, int year){
+
+    public Book(int id, String title, String author, int year, String bookCover) {
         this.id = id;
         this.title = title;
         this.author = author;
         this.year = year;
+        this.bookCover = bookCover;
 
+    }
+
+    public Book(String title, String author, int year, String bookCover) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.bookCover = bookCover;
     }
 
     public int getId() {
@@ -56,4 +66,14 @@ public class Book {
     public void setYear(int year) {
         this.year = year;
     }
+
+    public String getBookCover() {
+        return bookCover;
+    }
+
+    public void setBookCover(String bookCover) {
+        this.bookCover = bookCover;
+
+    }
+
 }

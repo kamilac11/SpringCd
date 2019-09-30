@@ -5,6 +5,7 @@ import io.javabrains.springbootstarter.courseapidata.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -46,5 +47,31 @@ public class BookController {
         bookService.deleteBook(id);
     }
 
+    @RequestMapping("/save")
+    public void save(){
+        Book book = new Book("Aaaaaa", "aaaaa", 123, "aaaaa");
+        Book book2 = new Book("Ccccc", "ccccc", 123, "aaaaa");
+        Book book3 = new Book("Bbbbbb", "bbbbb", 123, "aabbbbbbaaa");
+        bookService.addBook(book);
+        bookService.addBook(book2);
+        bookService.addBook(book3);
     }
+    @RequestMapping("/books/cover/{bookCover}")
+    public List<Book> getBooks(@PathVariable String bookCover) {
+        return bookService.getBookListByBookCover(bookCover);
+    }
+
+    @RequestMapping("/books/cover")
+    public List<Book> getBooksByCover(@RequestBody List<String> bookCover) {
+        List<Book>books = new ArrayList<>();
+        for (String s : bookCover) {
+            books.addAll(bookService.getBookListByBookCover(s));
+        }
+        return books;
+    }
+
+
+    }
+
+
 

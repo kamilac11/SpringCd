@@ -24,6 +24,10 @@ public class BookService {
         return bookRepository.findById(id);
     }
 
+    public List<Book> getBookListByBookCover(String bookCover) {
+        return bookRepository.findByBookCoverIgnoreCaseContaining(bookCover);
+    }
+
     //library can add new book to their collection
     public void addBook(Book book){
         bookRepository.save(book);
